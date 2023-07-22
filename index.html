@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+</head>
+<body>
+    <form id="survey-form">
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve our product.</p>
+        <div class="account">
+            <div class="survey-field">
+                <p class="section-name">Account</p>
+                <label for="name" id="name-label">Name<input type="text" placeholder="Enter Your Name" id="name" required></label>
+                <label for="email" id="email-label">Email<input type="email" placeholder="Email" id="email" required></label>
+                <label for="number" id="number-label">Age<input type="number" placeholder="Age" id="number" min="13" max="100" required></label>
+            </div>
+        </div>
+
+        <div class="personal">
+            <div class="survey-field">
+                <div class="birth-day">
+                    <p class="section-name">Date of Birth</p>
+                    <label for="number" id="number-labe"><input type="number" placeholder="MM" id="number" min="01" max="12" required></label>
+                    <label for="birth-day" id="birth-day-label"><input type="number" placeholder="DD" id="birth-day" min="01" max="31" required></label>
+                    <label for="birth-year" id="birth-year-label"><input type="number" placeholder="YYYY" id="birth-year" min="1900" max="2019" required></label>
+                </div>
+            </div>
+            <div class="survey-field">
+                <div class="gender-field">
+                    <p class="section-name">Gender</p>
+                    <label for="female" class="radio-label"><input type="radio" value="female" id="female" name="gender">Female</label>
+                    <label for="male" class="radio-label"><input type="radio" value="male" id="male" name="gender">Male</label>
+                    <label for="male" class="radio-label"><input type="radio" value="gender" id="no-answer" name="gender">Prefer not to answer</label>
+                    <label for="custom" class="radio-label" id="custom-gender"><input type="radio" value="custom" id="custom" name="gender"><input type="text" id="custom-gender" placeholder="Custom"></label>
+                </div>
+            </div>
+        </div>
+        
+       <div class="survey-field">
+            <p class="section-name">How did you hear about us?</p>
+            <select id="dropdown" required>
+                <option data-icon="assets/images/caret-square-down-solid.svg" value="">Please choose an option</option>
+                <option value="ad">Ad</option>
+                <option value="search">Search Engine</option>
+                <option value="blog-article">Blog/Article</option>
+                <option value="social-media">Social Media</option>
+                <option value="friend">Friend</option>
+            </select>
+       </div>
+
+       <div class="survey-field">
+           <p class="section-name">Email Subscriptions</p>
+           <div class="email-sub">
+                <label for="sales"><input type="checkbox" value="sales" id="sales">Sales Promotions</label>
+                <label for="news"><input type="checkbox" id="news" value="news">News & Events</label>
+                <label for="member"><input type="checkbox" value="member" id="member">Membership Updates</label>
+           </div>
+       </div>
+       
+       <div class="survey-field">
+           <p class="section-name">Additional Comments</p>
+           <textarea id="comments"></textarea>
+       </div>
+
+       <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>

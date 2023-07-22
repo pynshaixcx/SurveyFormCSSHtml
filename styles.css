@@ -1,0 +1,31 @@
+
+h1{
+	text-align: center;
+}
+
+p {
+	text-align: center;
+	font-style: italic;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  min-width: 300px;
+  width: 60vw;
+  padding-bottom: 2em;
+}
+
+label {
+	display: block;
+	margin: 0.5rem 0;
+}
+
+.inline {
+  width: unset;
+  margin-right: 0.5em;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  vertical-align: middle;
+}
